@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат матча</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #cccccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .result h1 {
+            color: #333;
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        header {
+            background-color: #cccccc;
+        }
+        a {
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<nav>
+
+    <a href="/">HOME</a>
+    <a href="/new-match">NEW</a>
+    <a href="/matches">MATCHES</a>
+
+</nav>
+
+<div class="result">
+    <h1>Match end! Player &#160 </h1><h1 th:text=" ${player1} "></h1><h1> &#160 win! </h1>
+    <table>
+        <thead>
+        <tr>
+            <th>PLAYER</th>
+            <th>SETS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${player1}"></td>
+            <td th:text="${player1Score}"></td>
+        </tr>
+        <tr>
+            <td th:text="${player2}"></td>
+            <td th:text="${player2Score}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <a href="#">HOME</a>
+</footer>
+</body>
+</html>

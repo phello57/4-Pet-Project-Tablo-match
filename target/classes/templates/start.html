@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Scoreboard</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #cccccc;
+            padding: 15px 0;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .content {
+            margin-top: 100px;
+        }
+        .title {
+            font-size: 36px;
+            color: blue;
+        }
+        .description {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .description span {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="/">HOME</a>
+    <a href="/new-match">NEW</a>
+    <a href="/matches">MATCHES</a>
+</div>
+<div class="content">
+    <div class="title">Tennis score board</div>
+    <div class="description">
+        <a href="/new-game">NEW</a><span> - start new match</span>
+        <a href="/table-of-score">MATCHES</a><span> - list of finished matches</span>
+    </div>
+</div>
+</body>
+
+</html>
