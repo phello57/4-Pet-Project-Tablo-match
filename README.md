@@ -1,8 +1,8 @@
 <br>Проект “Tабло теннисного матча”
-<br>Описание и ТЗ проекта доступно по адресу:
+<br>Описание и ТЗ проекта доступно по адресу:  
 <br>https://zhukovsd.github.io/java-backend-learning-course/Projects/TennisScoreboard/
 <br>
-<br>
+<br> http://185.221.153.34:8080
 <br>Используемые версии:
 <br>JDK 17
 <br>Tomcat 9.0.78
